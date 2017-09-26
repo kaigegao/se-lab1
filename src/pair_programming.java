@@ -1,6 +1,7 @@
 import java.util.*;
 import java.io.IOException;
 import java.io.*;
+//b2 change
 class MatrixDG {
 	//the changes of tests
 	public String[] mVexs; // ¶¥µã¼¯ºÏ
