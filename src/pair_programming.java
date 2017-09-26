@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.IOException;
 import java.io.*;
 class MatrixDG {
-
+	//the changes of tests
 	public String[] mVexs; // 顶点集合
 	public int[][] mMatrix; // 邻接矩阵
 	// 创建图
