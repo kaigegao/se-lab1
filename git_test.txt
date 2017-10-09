@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.nio.file.Paths;
 import javax.swing.*;
 //add a line here!
-//C4 branch
+//B2 branch
 class MatrixDG {
 
 	public String[] mVexs; // ¶¥µã¼¯ºÏ

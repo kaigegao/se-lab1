@@ -7,7 +7,7 @@ import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.InputStreamReader;
 //git test
-//C4
+//B2
 class GraphViz {
 
 	private static String TEMP_DIR = "D:\\temp"; 
