@@ -1,3 +1,4 @@
+package pkg;
 
 import java.io.BufferedReader;
 import java.io.DataInputStream;
@@ -9,11 +10,9 @@ import java.io.InputStreamReader;
 
 class GraphViz {
 
-	//private static String TEMP_DIR = "/tmp"; // Linux
-	private static String TEMP_DIR = "D:\\temp"; // Windows
-
-	//private static String DOT = "dot"; // Linux
+	private static String TEMP_DIR = "D:\\temp"; 
 	private static String DOT = "C:\\Program Files (x86)\\Graphviz2.38\\bin\\dot.exe";
+	
 	private StringBuilder graph = new StringBuilder();
 
 	public GraphViz() {
@@ -132,4 +131,4 @@ class GraphViz {
 		}
 		this.graph = sb;
 	}
-} // end of class GraphViz
+}
