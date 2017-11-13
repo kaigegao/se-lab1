@@ -255,7 +255,7 @@ public class PairProgramming {
     final int word1pos = getPosition(graph, word1);
     final int word2pos = getPosition(graph, word2);
     if (word1pos == -1 || word2pos == -1) {
-      System.out.println("There are no words in the graph");
+      System.out.println("There are not words in the graph");
       return "";
     }
     int pathScanner = path[word1pos][word2pos];
@@ -263,7 +263,7 @@ public class PairProgramming {
     if (pathScanner == -1) {
       System.out.println("There is no path" + "start word\"" + word1 + " \"to end word\"" + word2);
     } else {
-     
+      if (word1pos != word2pos) {
         System.out.print("The shortest distance" + "start word \"" + word1 
             + " \"end word \"" + word2 + " \"is ");
         wordsReturnStr.append(word1);
@@ -275,7 +275,8 @@ public class PairProgramming {
         wordsReturnStr.append("->");
         wordsReturnStr.append(word2);
         System.out.println(distance[word1pos][word2pos]);
-      } 
+      }
+    }
     return wordsReturnStr.toString();
   }
   
@@ -297,9 +298,9 @@ public class PairProgramming {
     graphViz.addln(graphViz.end_graph());
     graphViz.getDotSource();
     final String type = "png";
-    final File out = new File("D:\\graphOut." + type);
+    final File out = new File("C:\\temp\\graphOut." + type);
     graphViz.writeGraphToFile(graphViz.getGraph(graphViz.getDotSource(), type), out);
-    final byte[] image = image2byte("D:\\graphOut.png");
+    final byte[] image = image2byte("C:\\temp\\graphOut.png");
     ScaleIcon icon = new ScaleIcon(new ImageIcon(image));
     JLabel label = new JLabel(icon);
     JFrame frame = new JFrame();
@@ -351,9 +352,9 @@ public class PairProgramming {
     shortestG.addln(shortestG.end_graph());
     shortestG.getDotSource();
     final String type1 = "png";
-    final File out1 = new File("D:\\shortestPathOut." + type1);
+    final File out1 = new File("C:\\temp\\shortestPathOut." + type1);
     shortestG.writeGraphToFile(shortestG.getGraph(shortestG.getDotSource(), type1), out1);
-    final byte[] image = image2byte("D:\\shortestPathOut.png");
+    final byte[] image = image2byte("C:\\temp\\shortestPathOut.png");
     ScaleIcon icon = new ScaleIcon(new ImageIcon(image));
     JLabel label = new JLabel(icon);
     label.repaint();

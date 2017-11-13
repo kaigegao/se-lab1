@@ -19,7 +19,7 @@ public class PairProgrammingTestBlack {
 		
 	}
 	@Test
-	public void testQueryBridgeWords2() {
+	public void testQueryridgeWords2() {
 		Graph GraphTest = new Graph();
 		String VexOrigin ="to explore strange new worlds seek out life and civilizations get";
 		String[] VexTest= VexOrigin.split(" ");
